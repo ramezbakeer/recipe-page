@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --section-radius: 13px;
+  --paragraph-color: hsl(30, 10%, 34%);
+  --headers-font: "Young Serif", serif;
+  --h2-color: hsl(14, 45%, 36%);
+  --h2-size: 25px;
+  --paragraph-size: 16px;
+  --border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+/* font-family: "Young Serif", serif;
+font-family: "Outfit", sans-serif; */
+body {
+  font-family: "Outfit", sans-serif;
+}
+main {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section:not(:last-child, :first-child) {
+  border-bottom: var(--border-bottom);
+}
+.container {
+  width: 100%;
+  background-color: white;
+  border-radius: var(--section-radius);
+  margin: 0;
+  padding: 0 25px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+    padding: 25px;
+    margin: 50px;
+  }
+}
+.container .header .image {
+  margin-bottom: 20px;
+}
+.container img {
+  width: 100%;
+  border-radius: var(--section-radius);
+}
+.header {
+  margin-bottom: 20px;
+}
+.header .text h1 {
+  font-family: var(--headers-font);
+  color: hsl(24, 5%, 18%);
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.header .text p {
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px;
+  padding-bottom: 10px;
+  color: hsl(332, 51%, 32%);
+  border-radius: var(--section-radius);
+}
+
+.prep-time h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.prep-time ul {
+  margin-left: 25px;
+}
+.prep-time ul li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+}
+.prep-time ul li span {
+  font-weight: 700;
+}
+.prep-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.Ingredient {
+  padding-bottom: 20px;
+}
+.Ingredient h2 {
+  font-family: var(--headers-font);
+  font-weight: 400;
+  color: var(--h2-color);
+  margin-bottom: 15px;
+  font-size: var(--h2-size);
+}
+.Ingredient ul {
+  margin-left: 25px;
+}
+.Ingredient ul li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+}
+.Ingredient ul li::marker {
+  color: var(--h2-color);
+}
+.Instruction {
+  padding-bottom: 20px;
+}
+.Instruction h2 {
+  font-family: var(--headers-font);
+  font-weight: 400;
+  color: var(--h2-color);
+  margin: 20px 0;
+  font-size: var(--h2-size);
+}
+.Instruction ol {
+  margin-left: 25px;
+}
+.Instruction ol li span {
+  font-weight: 700;
+}
+.Instruction ol li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+  font-weight: 400;
+}
+.Instruction ol li::marker {
+  color: var(--h2-color);
+}
+.Nutrition h2 {
+  font-family: var(--headers-font);
+  font-weight: 400;
+  color: var(--h2-color);
+  margin: 20px 0;
+  font-size: var(--h2-size);
+}
+.Nutrition p {
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-size);
+  margin-bottom: 20px;
+}
+.Nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.Nutrition table tr:not(:last-child) {
+  border-bottom: var(--border-bottom);
+}
+.Nutrition table td {
+  padding: 15px;
+}
+.Nutrition table tr td:first-child {
+  color: var(--paragraph-color);
+  font-weight: 400;
+}
+.Nutrition table tr td:last-child {
+  color: var(--h2-color);
+  font-weight: bold;
+}
